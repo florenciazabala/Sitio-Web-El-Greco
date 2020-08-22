@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- Compiled and minified CSS MATERIALIZE -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+       <!-- Material icons -->
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       <!-- Google fonts -->
+       <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+        <!-- CSS externo -->
+       <link rel="StyleSheet" href="About.css">
+      <title>About Greco</title>
+      <link rel="icon" href="Imagenes/icono5.png">
+      
+    </head>
+
+    <body>
+      
+        <div class="section">
+          <h1>El Greco</h1>
+          
+          
+          <div class="row">
+               <div class="col s12">
+                     <nav>  <!-- Navbar -->
+                        <div class="nav-wrapper">
+                  
+                          <ul id="nav-movile" class="right hide-on-med-and-down">
+                            <li class="menu"><a href="index.html">Home</a></li>
+                            <li class="menu"><a href="#">About me</a></li>
+                            <li class="menu"><a href="#">works</a></li>
+                            <li class="menu"><a href="#">Contact</a></li>
+                          </ul>
+                        </div>
+                        
+                      </nav>
+                      <ul id="slide-out" class="sidenav"> <!-- Sidevan, menu desplegable -->
+                        <li class="head">
+                           <div class="user-view">
+                             <div class="background">
+                                <img  src="Imagenes/fondosidenav.png" alt="" class="responsive">
+                             </div>
+                              <a href="#user"> <img class="circle responsive" src="Imagenes/user.jpg" alt=""> </a>
+                              <a href="#name"> <span class="white-text name"> Doménikos Theotokópoulos</span> </a>
+                              <a href="#email"><span class="white-text email">elgreco@gmail.com</span></a>
+                            </div>
+                        </li>
+                        <li><a href="#!"><i class="material-icons">palette</i>Portfolio</a></li>
+                        <li><a href="#!">Second Link</a></li>
+                        <li><div class="divider"></div></li>
+                        <li><a class="subheader">Contacto</a></li>
+                        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+                        <li><a href="#!"><i class="material-icons">facebook</i>First Link With Icon</a></li>
+                        <li><a href="#!"><i class="material-icons">palette</i>First Link With Icon</a></li>
+                        <li><a href="#!"><i class="material-icons">info</i>First Link With Icon</a></li>
+                </ul>
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
+                </div>
+                
+          </div>
+
+          
+        </div>
+     
+      
+        
+
+
+      <!-- Compiled and minified JavaScript MATERIALICIZE-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+      <script>
+           document.addEventListener('DOMContentLoaded', function() {
+              var elems = document.querySelectorAll('.sidenav'); /* Init nav */
+              var instances = M.Sidenav.init(elems);
+            });
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.sidenav'); /* Init sidenav */
+                var instances = M.Sidenav.init(elems);
+
+                var elems = document.querySelectorAll('.dropdown-trigger'); /* Init  dropdowns (menu desplegable) */
+                var instances = M.Dropdown.init(elems);
+            });
+          
+        </script>
+
+    </body>
+</html>
